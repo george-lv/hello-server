@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: myapp
+  cloud:
+      config:
+         uri: http://localhost:8001
+
+server:
+  port: 8073
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+        
+   
+management:
+   security:
+      enabled:false
