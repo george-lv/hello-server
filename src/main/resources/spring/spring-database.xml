@@ -46,12 +46,12 @@
 		<property name="configLocation" value="classpath:myBatis-config.xml" />
 		<property name="dataSource" ref="dataSource" />
 		<property name="mapperLocations" value="classpath*:sqlMappers/**/*Mapper.xml" />
-		<property name="typeAliasesPackage" value="com.greentown.learn.bootdemo.model.dto" />
-		<property name="typeAliasesSuperType" value="com.greentown.learn.bootdemo.model.dto.BaseDO" />
+		<property name="typeAliasesPackage" value="com.greentown.smscenter.model.dto" />
+		<property name="typeAliasesSuperType" value="com.greentown.smscenter.model.dto.BaseDO" />
 	</bean>
 
 	<bean id="mapperScannerConfigurer" class="org.mybatis.spring.mapper.MapperScannerConfigurer">
-		<property name="basePackage" value="com.greentown.learn.bootdemo.mapper" />
+		<property name="basePackage" value="com.greentown.smscenter.mapper" />
 		<property name="sqlSessionFactoryBeanName" value="sqlSessionFactory" />
 	</bean>
 	<!-- RDS数据库连接相关配置 -->

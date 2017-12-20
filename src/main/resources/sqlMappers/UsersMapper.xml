@@ -4,7 +4,7 @@
 
 
 
-	<select id="getUserList" resultType="com.greentown.learn.bootdemo.model.dto.UserDO">
+	<select id="getUserList" resultType="com.greentown.smscenter.model.dto.UserDO">
 		select * from tb_user where status=0
 	</select>
 	
