@@ -25,7 +25,7 @@ import com.greentown.smscenter.utils.HttpSender;
 import com.greentown.smscenter.utils.SystemConstants;
 
 @RestController
-@RequestMapping("/api/sms")
+@RequestMapping("/rest/sms")
 public class SmsCenterResource {
 
 	 private static final Logger  logger = LoggerFactory.getLogger(SmsCenterResource.class);
@@ -170,6 +170,13 @@ public class SmsCenterResource {
            }
    		return result;
    	}
+    
+    
+    @RequestMapping(value="/hello",method = RequestMethod.GET)
+    public String helloSms(){
+    	
+    	return "from sms server";
+    }
     /**
      * 生成验证码
      * 
@@ -186,13 +193,6 @@ public class SmsCenterResource {
         }
         return NumberUtils.toLong(s.toString());
     }
-    
-    @RequestMapping(value="/hello",method = RequestMethod.GET)
-    public String hello() {
-        return "Hello World!";
-    }
-    
-    
     
     
 }
