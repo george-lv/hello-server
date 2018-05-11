@@ -1,0 +1,31 @@
+logging:
+      level.org.springframework.cloud: DEBUG
+spring:
+  application:
+    name: myapp
+  cloud:
+     config:
+        uri: http://localhost:8001
+  sleuth:
+    enabled: false
+zipkin:
+    storage:
+       type: mem
+  
+
+server:
+   port: 9411  
+        
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: false
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+  instance:
+    hostname: localhost
+        
+   
+management:
+   security:
+      enabled:false 
