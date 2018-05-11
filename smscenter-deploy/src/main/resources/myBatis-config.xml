@@ -40,8 +40,8 @@
 	</settings>
 	<!-- 
 	<plugins>
-		<plugin interceptor="com.chinagreentown.onlineopen.server.dal.dialect.OffsetLimitInterceptor">
-			<property name="dialectClass" value="com.chinagreentown.onlineopen.server.dal.dialect.MySQLDialect"/>
+		<plugin interceptor="com.chinaxinchang.onlineopen.server.dal.dialect.OffsetLimitInterceptor">
+			<property name="dialectClass" value="com.chinaxinchang.onlineopen.server.dal.dialect.MySQLDialect"/>
 		</plugin>
 	</plugins>
 	 -->

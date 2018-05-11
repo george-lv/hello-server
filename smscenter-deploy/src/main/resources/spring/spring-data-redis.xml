@@ -34,14 +34,14 @@
 				class="org.springframework.data.redis.serializer.StringRedisSerializer" />
 		</property>
 		<property name="valueSerializer">
-			<bean class="com.greentown.common.web.FastJsonRedisSerializer" />
+			<bean class="com.xinchang.common.web.FastJsonRedisSerializer" />
 		</property>
 		<property name="hashKeySerializer">
 			<bean
 				class="org.springframework.data.redis.serializer.StringRedisSerializer" />
 		</property>
 		<property name="hashValueSerializer">
-			<bean class="com.greentown.common.web.FastJsonRedisSerializer" />
+			<bean class="com.xinchang.common.web.FastJsonRedisSerializer" />
 		</property>
 	</bean>
 </beans>
