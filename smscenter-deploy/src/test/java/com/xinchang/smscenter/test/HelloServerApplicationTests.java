@@ -1,4 +1,4 @@
-package com.greentown.smscenter.test;
+package com.xinchang.smscenter.test;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
